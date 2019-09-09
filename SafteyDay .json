@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "65d53625-d057-410e-8e37-8cbf5e0be2c6",
+		"name": "SafteyDay copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "UserName",
+							"value": "6000000012",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "currentpermissionId",
+							"value": "1090",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/token",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/users/getuser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer JxcE1YMA71OVQE8tIynadDoVOFCuvT0gXF1q1Qk9kfM5nJNBonwU09CdOTmChzjquRKJpX1Hfro2a2S7rH9ZvCqMR8ho9oNB_plZpzhA1permuMS57x5C8g73A0Q4WSC4TllQOu4suAnGqKHXGj1sDkcrzQQ1FxB53ApvP72RbJ6TnUy9-wFGvHu_9ykS58KDiGmv4TGMo4UCG-PbhRHNXytKLEgpuJwYr17PoHR64YOG-bbyHXdgknIVw0ExJc1XDzURa0VBR1Wx7wTC2GxXr9LUvXM1NKeDlbPff_M1QOCz8_O0gCl5efoc-XXvpTezOW0cNbSv8Tz6YFXRU2egca7aLaCBfkkxWZUAj_nkePcohbz0XlKh1LIpqW1TOfl-ZvQ4nhELP1QttivyfTN2WPy3f-gB6uYwzraH7bedsPfDDR3IKydlZK43poDxViKr9bK-UH2pL3mnRkKv_JYpvNnShmqPaHF2PE_m5LuqG5yKqt9iHtS6GYDmsxpqsA0shadIEAgdgTRd0Bec5xcmNBzyJcgrc-x7nQGWrXN78Py5C8aFpxmdeWvzOTYRf2hKsePfivrtmWuKGeRhkKmUI6CBFofMHa7E_9BlCkakZm-kL_Wz4fKFVxV9Mf1Jtk5UZMrdjk6cQCCmlgjYLArUUScCBHnwhMf9e0Cw5HFrbAGYu5UUWQwwpE5xk7i-JwpwlnldFhFlB7_u7TozcF_COkMS_lTOoXqZQXqgBPtY1PU1JlDrWASeGHQFRZXukYiKjWY5cCGKJz26v6lXjiboX7rM5HLwdSCNbqEjH_7_OPXvVjNVHEROpNl7j0F6Ry66YkDVSgqpzlDKoeZCz79UmAXQara3F_8cF-J4Yhlq7s6LRv-9z_SFV2UNjN8FBEzYqDvOjM8R5dWa54ruTHt9zCxteIrsxWmlTNcjgseOJLh4A1ZzjLWzRhHe8weO0ceuf7x3jZIymHs4Plqls5E80Xk2DLa3tS9A7cUyp8RT1AWrnkoNvK1w-cfcELSDNDdgIKFhQkQJ1Ht_SJtgbymWTsnH_CGWx1OG3_0oaXYJfgyqbJSIRtCTXcS-aB-TP9bWS-uIh3otMmarMRk_8jztLH_xbhmb5EbiYjuGd1DFuJKjMCzbqcfjIb-ZxJquEZSEZ_lHH4kIYgNePafy0g-wZ_mizAA7eec4PypqLYnv-o"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/users/getuser?nationalId=7000000011",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"users",
+						"getuser"
+					],
+					"query": [
+						{
+							"key": "nationalId",
+							"value": "7000000011"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/forums/getforums",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer DXSGbXqR6SkcQ2m7JLDVKrqsy-DlH_VaKeF6qcJmEkX-yjBccI6MCAglA6dDfMBYe5IG4y_1MsQStqhYt1oDsghblRQ0HPVadQNCPtIbqXDLwNNtbv3b6JHLDE841PR7yoDfn27mLl-o1yr7drc9hWTSu94xWVqx0YouIwhANOWYF7D1HRYlyHAOWykjLIkEiA_1GN6FMKtZdgppMz8Y17XmvvvCMlTsbq3x3q-K5fIqFP2p9xIt6lGDeM_DLh6lRi9ZsEWae5RhVTBJ6lb6NU6divBGMZ214DYXwM9mHcceF90lTAFwVAYZ2GlQBuZk7o6-uFWzIr5juLftwiKE-cWVN8RfvntfXd3piKKsj7PXgxyO_uV5iacyFf8_lfkLUtSQnCiAMgMeSFO84GZgVaZr2ywzB8xpSDEfPMK0mTI1tQ2WQbTXTCVOv7JhTJl29jMSz9vU1GwTu25bEcDbWCwZT0EExrsXDmIt33piRdLIP1W7SW4KqKxsm5eGH4BfQYDSAeWPgqZIIZwpVk0RlUwZ14ARgbWseoVjsvW5XFF6XzH7A-igT4gUJeUYvb9otqRux0XDhHsrOt6w1z7gujnxfq7ac4LNXxLFlZEwLGvkhnEDd4mnVPYfP_4Ia4NqX2_-jl6Gu6hINhq3iSnaUwTqjsm44mW8myLTy3kOAEcrBZJ8IHMkcploOEu7ntcaHFJ1ejYZpILAPhjsf20th1R8z09sAvugNussdUTMNAEKTmFDeZOOH3_FDP6UKeDhczIVkGHaYcfs2ji4q3fF_aSmp8IocMmn34wmypN44IewfsapAXel8q8xJ_FKZP6GZ6YcX_podpp6uLI6tUOIGjXzmm0swlBRtBY_yNxaLCFnJNgZvd_53bm-RgOyDZ9812T9zY8GKC_X8U2Q2Ozx3dHhIEgECNl2qVRQ62gXY0sU3G9-InoW-Yy--ZL65DvAqC1StTQm_bmIyej_VsTL8xvPJ9vsMH-6t41n2pXin06Q3bEwlw4dDD2DGAXqQbJ1TfCyoCcOxaJez3vHqPzmTuWL8GSqeK2BKnTt7EeKOIkMLeJiy7Rk-lpiVc5M76cNsjbVlSopQJwwlxnpWDl1dfNjj5YvVZGT1sCt2tDmeNCRkL-jJssK3pUZUSTcD0o_a0s8RXSQJZ5SiE80-4rcYDUfZz961iMcXRF_KBn9AR7td1eTN94RhGB3-HDBmx0ZFHto953mDFFiiAgl5zHmiUUHz-bQskyQLqK6dVlcVunVRJEzRYjNG_57SJfhjy-A"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/forums/getforums",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"forums",
+						"getforums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/forums/gettrainingbag",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer JxcE1YMA71OVQE8tIynadDoVOFCuvT0gXF1q1Qk9kfM5nJNBonwU09CdOTmChzjquRKJpX1Hfro2a2S7rH9ZvCqMR8ho9oNB_plZpzhA1permuMS57x5C8g73A0Q4WSC4TllQOu4suAnGqKHXGj1sDkcrzQQ1FxB53ApvP72RbJ6TnUy9-wFGvHu_9ykS58KDiGmv4TGMo4UCG-PbhRHNXytKLEgpuJwYr17PoHR64YOG-bbyHXdgknIVw0ExJc1XDzURa0VBR1Wx7wTC2GxXr9LUvXM1NKeDlbPff_M1QOCz8_O0gCl5efoc-XXvpTezOW0cNbSv8Tz6YFXRU2egca7aLaCBfkkxWZUAj_nkePcohbz0XlKh1LIpqW1TOfl-ZvQ4nhELP1QttivyfTN2WPy3f-gB6uYwzraH7bedsPfDDR3IKydlZK43poDxViKr9bK-UH2pL3mnRkKv_JYpvNnShmqPaHF2PE_m5LuqG5yKqt9iHtS6GYDmsxpqsA0shadIEAgdgTRd0Bec5xcmNBzyJcgrc-x7nQGWrXN78Py5C8aFpxmdeWvzOTYRf2hKsePfivrtmWuKGeRhkKmUI6CBFofMHa7E_9BlCkakZm-kL_Wz4fKFVxV9Mf1Jtk5UZMrdjk6cQCCmlgjYLArUUScCBHnwhMf9e0Cw5HFrbAGYu5UUWQwwpE5xk7i-JwpwlnldFhFlB7_u7TozcF_COkMS_lTOoXqZQXqgBPtY1PU1JlDrWASeGHQFRZXukYiKjWY5cCGKJz26v6lXjiboX7rM5HLwdSCNbqEjH_7_OPXvVjNVHEROpNl7j0F6Ry66YkDVSgqpzlDKoeZCz79UmAXQara3F_8cF-J4Yhlq7s6LRv-9z_SFV2UNjN8FBEzYqDvOjM8R5dWa54ruTHt9zCxteIrsxWmlTNcjgseOJLh4A1ZzjLWzRhHe8weO0ceuf7x3jZIymHs4Plqls5E80Xk2DLa3tS9A7cUyp8RT1AWrnkoNvK1w-cfcELSDNDdgIKFhQkQJ1Ht_SJtgbymWTsnH_CGWx1OG3_0oaXYJfgyqbJSIRtCTXcS-aB-TP9bWS-uIh3otMmarMRk_8jztLH_xbhmb5EbiYjuGd1DFuJKjMCzbqcfjIb-ZxJquEZSEZ_lHH4kIYgNePafy0g-wZ_mizAA7eec4PypqLYnv-o"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/forums/gettrainingbag?trainingBagId=2",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"forums",
+						"gettrainingbag"
+					],
+					"query": [
+						{
+							"key": "trainingBagId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/attendances/getforumattendances?forumId=11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Vf0fGYBmyJvzO2kCY3JSIbAnKAPP1g6LgQEFl4AYXsLSgNXk5ca4dbkN94JH8rVaO75kYJHWB_A6jM0EcJad_doLOXcDYhb2KmdCp2i-FF3zoEj0fTCRf-icQVsvAWkJJ5MxpySRqtSknVdFFzp-4d4YpVQ_mocZU1jIoVl1TI5yhkmY02RX9VcvN6l22IjHHDT8rH7jHvIsUYby9W3Meg8HXuys-WuHM8-0Ur_AT29vP0kB6WD_r7vQahpsquw349-ReqAEHJ0nqh2gd87aXzFehqI2hGe4Z2stC83nIBMpBCUShy0CNyiYBNl2MGr3V8pGvMR0IALFt_QUpp2-LUE2YYS62JAvrPBo-44MVc8pPRY0RxHys3dE4KKxmO9Q5ayZTok3MiXhgtGrW3kn5QdXjnB9WM-XYyLw6WqEYRBWv5D-2x1b-ZsiB1GmzBKaN1qBa5K478EbJCZjEFbXIz9j3KUduyWZ_c7Bc8-sAVbCgT3U1wWXveNKpoPGS2hPGJOd6mP_rZ1Q0TGdvgqdB8lQUNZQEfaH8DiQ75e4lkYbLlMJvOfq23huVpNyxmQnvSo8-x-fX29lLqWizpnm8e3h-IN2J-ZB9XbsfXUiIQQRQXTHaC9U4D4OPrpw-6ssZUqkBSCr6S-OV4vurd7TG-R4IzrbMuTBITSyT_Ojq0Nyns9-KE5PM01XdhT1D3vPE8rL-5sBYw9x45YTabb3rxDxK4Fo_VRfmh9p3B8oaV_0LQJBw-2cqSHq0qceh2rlXX_MBDn-AZmuyMIwcG2h7da_fjgWOzekW45a4_UcbASh0qcpfE485UP5Uo6MeiDOYn4xwMbQEoDo3VAhu3xfI_3SeQS5w2oOl5IsGUQ1C7Ff_rJbM5xW9dCx8Rd1yaQjAJyf3dmsnde3PVWY7l874XwLv_UwxrPyEVerB7rkm1SRGjCI9NuRnSywZkZm7MAlRT0nV1cnGkfhhye522je-E_iTsnUIlvsCutAXn01K-VO-r9FycA0PYCQzLgMwQRk2m6MyuvcTKDp2FT-s7U8j_kd1o2UUvMz4Di_YFFr8elGxa5Helhi9plXiJRleT2GNBshVfSzjsvEzjsSURI48n9EdIcJJt1e4OyMppjd57wfL-XFxP31l19syckFTKV-2XHy9zqDKsrWZW3iiy53FX3Vk8rTrEUWZdqDsC36zUw0tBqx7MBUrO--31hNxiHBin__KFyyxa8SDJE6EMSt2dtfMpA3bPaFkA4ZT99Eonc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer UefzuR1TR0DvtDjBc7Y2gODYBLeapxVQIpDxSxdLKhwfMQwqfR1PErYw14jYLWhaZ3--ssCw35rW3T-JVq3Xc5Vbd4rPY4xgGk_vw-KKrOLO46n5Mzg7owUv4phfHqgQA2-dwldXbZXAUKMxm95HBZObLmJL2HFZDSsdFdrMVKDyVLvP4IOnNhh6-lJA4lQJwI22PHMTWcva5-W4KBJ_VHebLvycf4_0zjjbA4K1HDpgKLlwO2xthSOprb_yzFlgdlbhCybHS-7koOGqUtlTD_2TY3rA36cCgGNT5kCn-Wf0krGDcV0VLOf6grFa21y2tNwnSgCpSGpK-RiJ45wHtMVUiW6Dkn91rpi2I0uLDhP-3GJJ56Rzfa3sZZGDZ0mKl2lbvMf8z8HBJBuNg8clwYwwbBFVh8HmYhVDlbRahOOnUh-kp1-SLrdqoVqSQ03cdD6sxUE36oDtZPFm8OlrX-bazPMc6bzz4sAdZkalbuxC9R8eHqBlfKpRShJ2v99_ntMv1jTie8vv9rjawMu8f02oDHlpjFgqt8vHGmce3uqptErKqVZ69wbrMXaGcTxDGbtGQDUlrxCDETWc7ZREH_CISjcLSGONGn7W--c2nAd3meS7WXx3T-Qm5i32WWPNfEdx4VZ8cXKx9zE7GxBb-9zAoAlpbNEyiqaeXSXX54eLvDYnixnOQzxlMDWUbwOxAJdD8X-zk6HP2qsJEtp9FFHpFLR2Y7bKYIAaiRJWM0iEL6kK5zhy_AsrIL4pcYscU96OgHpVkCbRfA2r4TLs6PlGct8J8dO_vfwZqlwWGsU3_wA-UlVH2MgLidNAQHvPAjybTM2EharozjAOVckGPScrHAZEiZD8ZyC9c4g019GxZPXfJFMz8Gj9I7qtxhrBMME59YIb8RsqLqAkvh01dvFxqzFHnmCAyrITAqWj47z3YIknhXp3jPsmKB7ShcMpoAgdLZLL9k9NP0gI3mPYdoKpl-d3A8-T8lebKq0PwOOP9WiKg1UAIpyIuMNcLwrrDKzDlsrOvE0FRLJZCTYJErGZjJcJUaPzSbN1tpjXBtksADwhV8FqkBbh_KWnIlflUPEL49Pu7RjCTdvxBlsckerBVDPbsr5rOFHx8PRig7auRm9gyqdeHchWMxNkEL3gwoXJ9BVjazytNYYp0loNVf-F7Neshqpq0EhQaIYwBr2O-TB-XPs0CyjDEFRX4vqs0fFLJaIWE-3fF3ROXPwyoY7eQHU5ZQL4EG_TrJdeyKs"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/attendances/getforumattendances?forumId=11",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"attendances",
+						"getforumattendances"
+					],
+					"query": [
+						{
+							"key": "forumId",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/assessment/getforumassessment?AssessmentId=1&fileType=0",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Vf0fGYBmyJvzO2kCY3JSIbAnKAPP1g6LgQEFl4AYXsLSgNXk5ca4dbkN94JH8rVaO75kYJHWB_A6jM0EcJad_doLOXcDYhb2KmdCp2i-FF3zoEj0fTCRf-icQVsvAWkJJ5MxpySRqtSknVdFFzp-4d4YpVQ_mocZU1jIoVl1TI5yhkmY02RX9VcvN6l22IjHHDT8rH7jHvIsUYby9W3Meg8HXuys-WuHM8-0Ur_AT29vP0kB6WD_r7vQahpsquw349-ReqAEHJ0nqh2gd87aXzFehqI2hGe4Z2stC83nIBMpBCUShy0CNyiYBNl2MGr3V8pGvMR0IALFt_QUpp2-LUE2YYS62JAvrPBo-44MVc8pPRY0RxHys3dE4KKxmO9Q5ayZTok3MiXhgtGrW3kn5QdXjnB9WM-XYyLw6WqEYRBWv5D-2x1b-ZsiB1GmzBKaN1qBa5K478EbJCZjEFbXIz9j3KUduyWZ_c7Bc8-sAVbCgT3U1wWXveNKpoPGS2hPGJOd6mP_rZ1Q0TGdvgqdB8lQUNZQEfaH8DiQ75e4lkYbLlMJvOfq23huVpNyxmQnvSo8-x-fX29lLqWizpnm8e3h-IN2J-ZB9XbsfXUiIQQRQXTHaC9U4D4OPrpw-6ssZUqkBSCr6S-OV4vurd7TG-R4IzrbMuTBITSyT_Ojq0Nyns9-KE5PM01XdhT1D3vPE8rL-5sBYw9x45YTabb3rxDxK4Fo_VRfmh9p3B8oaV_0LQJBw-2cqSHq0qceh2rlXX_MBDn-AZmuyMIwcG2h7da_fjgWOzekW45a4_UcbASh0qcpfE485UP5Uo6MeiDOYn4xwMbQEoDo3VAhu3xfI_3SeQS5w2oOl5IsGUQ1C7Ff_rJbM5xW9dCx8Rd1yaQjAJyf3dmsnde3PVWY7l874XwLv_UwxrPyEVerB7rkm1SRGjCI9NuRnSywZkZm7MAlRT0nV1cnGkfhhye522je-E_iTsnUIlvsCutAXn01K-VO-r9FycA0PYCQzLgMwQRk2m6MyuvcTKDp2FT-s7U8j_kd1o2UUvMz4Di_YFFr8elGxa5Helhi9plXiJRleT2GNBshVfSzjsvEzjsSURI48n9EdIcJJt1e4OyMppjd57wfL-XFxP31l19syckFTKV-2XHy9zqDKsrWZW3iiy53FX3Vk8rTrEUWZdqDsC36zUw0tBqx7MBUrO--31hNxiHBin__KFyyxa8SDJE6EMSt2dtfMpA3bPaFkA4ZT99Eonc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer Vf0fGYBmyJvzO2kCY3JSIbAnKAPP1g6LgQEFl4AYXsLSgNXk5ca4dbkN94JH8rVaO75kYJHWB_A6jM0EcJad_doLOXcDYhb2KmdCp2i-FF3zoEj0fTCRf-icQVsvAWkJJ5MxpySRqtSknVdFFzp-4d4YpVQ_mocZU1jIoVl1TI5yhkmY02RX9VcvN6l22IjHHDT8rH7jHvIsUYby9W3Meg8HXuys-WuHM8-0Ur_AT29vP0kB6WD_r7vQahpsquw349-ReqAEHJ0nqh2gd87aXzFehqI2hGe4Z2stC83nIBMpBCUShy0CNyiYBNl2MGr3V8pGvMR0IALFt_QUpp2-LUE2YYS62JAvrPBo-44MVc8pPRY0RxHys3dE4KKxmO9Q5ayZTok3MiXhgtGrW3kn5QdXjnB9WM-XYyLw6WqEYRBWv5D-2x1b-ZsiB1GmzBKaN1qBa5K478EbJCZjEFbXIz9j3KUduyWZ_c7Bc8-sAVbCgT3U1wWXveNKpoPGS2hPGJOd6mP_rZ1Q0TGdvgqdB8lQUNZQEfaH8DiQ75e4lkYbLlMJvOfq23huVpNyxmQnvSo8-x-fX29lLqWizpnm8e3h-IN2J-ZB9XbsfXUiIQQRQXTHaC9U4D4OPrpw-6ssZUqkBSCr6S-OV4vurd7TG-R4IzrbMuTBITSyT_Ojq0Nyns9-KE5PM01XdhT1D3vPE8rL-5sBYw9x45YTabb3rxDxK4Fo_VRfmh9p3B8oaV_0LQJBw-2cqSHq0qceh2rlXX_MBDn-AZmuyMIwcG2h7da_fjgWOzekW45a4_UcbASh0qcpfE485UP5Uo6MeiDOYn4xwMbQEoDo3VAhu3xfI_3SeQS5w2oOl5IsGUQ1C7Ff_rJbM5xW9dCx8Rd1yaQjAJyf3dmsnde3PVWY7l874XwLv_UwxrPyEVerB7rkm1SRGjCI9NuRnSywZkZm7MAlRT0nV1cnGkfhhye522je-E_iTsnUIlvsCutAXn01K-VO-r9FycA0PYCQzLgMwQRk2m6MyuvcTKDp2FT-s7U8j_kd1o2UUvMz4Di_YFFr8elGxa5Helhi9plXiJRleT2GNBshVfSzjsvEzjsSURI48n9EdIcJJt1e4OyMppjd57wfL-XFxP31l19syckFTKV-2XHy9zqDKsrWZW3iiy53FX3Vk8rTrEUWZdqDsC36zUw0tBqx7MBUrO--31hNxiHBin__KFyyxa8SDJE6EMSt2dtfMpA3bPaFkA4ZT99Eonc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/assessment/getforumassessment?AssessmentId=1&fileType=0",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"assessment",
+						"getforumassessment"
+					],
+					"query": [
+						{
+							"key": "AssessmentId",
+							"value": "1"
+						},
+						{
+							"key": "fileType",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/attendances/getforumattendancesrate?forumId=11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "HHfMVuIRGciiR1YJzgDIZyMxuNZpUOL5dabjQR001usuHiSWUyu67ntqFLFyoMruodTK0JnsJZwxa-XignWxsdf2_jQK9ceeoPOrhipcseCbPPIKM3yPZx6wgoD5ZGeuecgfZOfdWVQ4kiNmGU41vAHosWTbkxphA6_Y8eH_5Ah30ufkGI_nMYhs1mSaFCqh_mPqPuT5A8Rf-xOrAY4gh6qUBFx5twJVHcEQurVV5WS2fNc5RmBklqKWpsyCsFu4haR25r3PxHOu_GdbWQ43WyI1pJ9LNqtHt26Y5mV_7viyTtUTGdmxSeiQxe7IU-fsMpEZOIw7pZ3R3wUlBwV72pwEN8s1hGx8FbicF4c8sgCi5uO9LLLsX13MbJxA_II6RrNz6ed8YUlVrlbnfFsxOXKfWoRpzbV1W83SLfE6nbDHc3ZyJRKsMbBsrvqprLVNUD8LwC984W1yUsEwkoGyH2lhJOH79md4oSmOdw3URFXMUoblbF27k3Ksn9GZ7BBnmeDAW61HRofVHHbzLF02Fn7VGNpnREO-TDlgDcTpNLt6dbHSFZ-gJQinkPxiHw_X3LVTe9KFcFPI1_Ien9IgeqL389fm1WMUZmRUUMLwflIE4uGnzV49Sv5NlPU6Hx-uiaC3LNWL6LhBa6BV9tSHvwfdrHsuwz-Qf97PhFPhVPtcse0gdry2ORv-Xv-6IOAzX2UlaT0mzpSoesCUrnTAwTE2DVmYRaV9fUBZ2NuCoKQ6kWbDE8JAvnNl5o7DqRsA64DKNdKQ3-gjH6LTBg0Qxd_9vvuBwKVHcwlCcWavfsyPYiUEooR0_yV9_FDWQsDCuP8_8lUHLFpiz3BkmM_IgP-TfTGyC4qgvMLNoPbCT-10VJ6ce1xPIsr2D26gwXxMsjvBq9EjTJS1wFyD0nU-KvjLlLSm27p4d40IdlxvrX8Xx2JTy8FdT-DAIs6IeB1TXSvUk-p_hs39LfM6qyYLb3cs-aX2NvzBNSg7CDLXD93XO_GTFjjre_pK7HlVS2N2kVYqRGTLsJ0xqzuCxSTYIAczNCEHFJVQvt0s7mhZXSNIsQl8sIHwKbgqPB-YvOR2jIQyPyT0DPIqw8JpqOzAg5nSg7_gZLFWOyKsqxttQhx0N8AQsgQM1CLO5qu9wyt7H2e8Zn2wGCTJjLBWYJ4JwXKiZAjoNo2Nc_ZWqHdv85axJNbRPvH3p0Dk-Z9gir-8pW3mxoALGvMgNPXOH9L4DWdapOT6mTyxoTchwbE-3bg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer UefzuR1TR0DvtDjBc7Y2gODYBLeapxVQIpDxSxdLKhwfMQwqfR1PErYw14jYLWhaZ3--ssCw35rW3T-JVq3Xc5Vbd4rPY4xgGk_vw-KKrOLO46n5Mzg7owUv4phfHqgQA2-dwldXbZXAUKMxm95HBZObLmJL2HFZDSsdFdrMVKDyVLvP4IOnNhh6-lJA4lQJwI22PHMTWcva5-W4KBJ_VHebLvycf4_0zjjbA4K1HDpgKLlwO2xthSOprb_yzFlgdlbhCybHS-7koOGqUtlTD_2TY3rA36cCgGNT5kCn-Wf0krGDcV0VLOf6grFa21y2tNwnSgCpSGpK-RiJ45wHtMVUiW6Dkn91rpi2I0uLDhP-3GJJ56Rzfa3sZZGDZ0mKl2lbvMf8z8HBJBuNg8clwYwwbBFVh8HmYhVDlbRahOOnUh-kp1-SLrdqoVqSQ03cdD6sxUE36oDtZPFm8OlrX-bazPMc6bzz4sAdZkalbuxC9R8eHqBlfKpRShJ2v99_ntMv1jTie8vv9rjawMu8f02oDHlpjFgqt8vHGmce3uqptErKqVZ69wbrMXaGcTxDGbtGQDUlrxCDETWc7ZREH_CISjcLSGONGn7W--c2nAd3meS7WXx3T-Qm5i32WWPNfEdx4VZ8cXKx9zE7GxBb-9zAoAlpbNEyiqaeXSXX54eLvDYnixnOQzxlMDWUbwOxAJdD8X-zk6HP2qsJEtp9FFHpFLR2Y7bKYIAaiRJWM0iEL6kK5zhy_AsrIL4pcYscU96OgHpVkCbRfA2r4TLs6PlGct8J8dO_vfwZqlwWGsU3_wA-UlVH2MgLidNAQHvPAjybTM2EharozjAOVckGPScrHAZEiZD8ZyC9c4g019GxZPXfJFMz8Gj9I7qtxhrBMME59YIb8RsqLqAkvh01dvFxqzFHnmCAyrITAqWj47z3YIknhXp3jPsmKB7ShcMpoAgdLZLL9k9NP0gI3mPYdoKpl-d3A8-T8lebKq0PwOOP9WiKg1UAIpyIuMNcLwrrDKzDlsrOvE0FRLJZCTYJErGZjJcJUaPzSbN1tpjXBtksADwhV8FqkBbh_KWnIlflUPEL49Pu7RjCTdvxBlsckerBVDPbsr5rOFHx8PRig7auRm9gyqdeHchWMxNkEL3gwoXJ9BVjazytNYYp0loNVf-F7Neshqpq0EhQaIYwBr2O-TB-XPs0CyjDEFRX4vqs0fFLJaIWE-3fF3ROXPwyoY7eQHU5ZQL4EG_TrJdeyKs"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/attendances/getforumattendancesrate?forumId=11",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"attendances",
+						"getforumattendancesrate"
+					],
+					"query": [
+						{
+							"key": "forumId",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/attendances/postforumattendances",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2-GjjSPXxh_x12F7cJfZfPtmcXbsRk8Da_2R_6llHFEuAi3UPunOHDSU6XyvkNE_LGAMYNC2mCWGzv2Lgad8amza1G7XcqjkWFbdfQY-bJ8rqgFLjK6V-oeVDXLytmdk2JH8Cki9ak9QuHsSyZ8iBDBoA3qKJxydvAMGgvIR__AnstTN1QE_I2TxHFuqhphMUk0rP3ffbmZptYSFgarBK7hvKIggAAZJrdFZwYdkyx3V4VxRwEEHSTGHYRpCdG2x9D0bfcaxTOSptw9WkDU88gIrxYJwEgeskdxN2d8nUU-o427bOuXLBYTiv1d9HxU4W_nXn_eAf3EZ7Y_fY47gIYPVpEFMRjlUcYSHa1X0YNP7DJM6wiJ2X2opkYDY8Vj4YAgZdAJ4f7HaMRk-v4OGhll-Wxkel9yXKCGAV6FL7WuTGiMRijrYOpwtRShZZbxNyfQ09gAwl1i0smYPGUVvnNv4E2-Gu3q4gCdft8jXUU3GLY35MN9QspZCWruOhj12Gy1AK-RSu2eh-i33kj6W5m9mTmeZKfvd0sWmGnJwv2tw8caF0slBlYYwt4h8BOAAPi2-iiva0bxjNEOMWYuVxHuGX3l-IpN2zSe9Eu_US5_jyGoM90D5G3PA5OUJri70KikzzB-Ut-wq0htIyKYl29BxXBv8I5aacalzbv-ScppfMIoKkvJL-e7hrraOPbVzRey2eCIMuMm0c4AmUptE2pt1uVlhD0gI3SkOAvfAHM0dPud1JVcSblKY1Om3ju-r88PqJWRAf7wAtBSjqKVubOrNGO0BhqTttQHypPVwblTt68SMe0Kdtw6lMJg9kJGR3zzvyMpIN5-XBnzVaBxRp0xnv1yjLR9_pkovmR5cDVXbOGsDtHVsT7oMZY-1XbGgb0K7F_zNtszE9Uoh1BspXVYhliX2EnlMSgGyXcu4RYlkXJJXZSPF_OeH1hyXi0DpoCVG480yQpQhmyzJbJiLMpS4PQkGKg0GbCXhrNdceAu3E6qHJ4vrNi2RZ8At5aQwo7S4VWbq-Y4MU1Vjhig-g0v_8EPje57cJYrrdnmJLtCRhkzXpD1dIFD-vyc-AcqeyjJr7WfIx6ZS680_WKLWdB3kbWEyNhZ3eTmVmnx5IgQ_rmrc2o0t3sUKh9UKujpfO2TzxUUd7Y21dRm2EBSP8luTkUdVvP-ybkvjIv2XL0Y9OY_-cHsxrYuM2V56MXQOpO7kGs4Ofr3RBsFDPQxDI7xR9kkYgXiI5P5b3zccW54",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 2,\n    \"status\": 1\n  }\n]"
+				},
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/attendances/postforumattendances",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"attendances",
+						"postforumattendances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/assessment/getassessment?AssessmentId=3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "qRVVVlT8kxUPHi2DOleS-Mka_slaoiQgtayuHDHpoyi-3WmWryMUqH7wGOzUiyBVuM370Kj62vheZnu7Bytmm_jFJ97MVhbO1RlEdHFJizKryEXPqNTpTvw8MNriA16WDbS1y69g2MDBrbEf0h8jlZaSm_Zxzlm63cvl1dRg3Ty8m2bFI2jxrGT0sZ11agvOKKnBAUxsorzAzR85GnioisPBtQsNYnYi_Za30NOWAXg-k9sQGQRJH3p2uKFoKwA9OUoWrm62ykLedjcUbRxp6c5sDWmHOijcdgHgy0vpXsheFlfdWYt0mRkliKVMWXy2ZiQ36RFqmySFKm0FMNZgz7trgOkAW8cnkxtp-FeBPpPid_DhYmUoTfosfrCINgE89SaAadtUUPb5UPrg2AJUg396DO0Bx_pwBVaIyTXjEt2hNstXpG9xZcy05iQP-PXluEy87_DoS3Dps1gcwgl1XES_uAgeOagyhQH3iQjb-_GyFglrK8zkWQMCdAtTMr8yhiHqafjXRRqLz5bWslWQEQOAUHuilWwrWX7W6GUiTxkZOPwh5Wp4XLM-_qcZ8Cywt8loD-QBH-08Rhuh1MQH4UTsWfcptNll90-1O8vmhxNLh-I2D1gnCOY-Ce77lFHCLTZtXao3jbxsZGgLcdymHDnIMK-2gJMloyBMFLI0x_gmhN439zG7pwbOHjnXVbpubHoXsZk-SkhVAoViOfmqoC7gg0z9wnmmLWaeaY7mdYcPNwZrnX2aWQ8j6yFCAZO6ahLcssG67cstuLRf0P33EX6s0EAye2T-ctlhwlZQtmbPi4dbqsvXAB0ha2ZFvb1wcSm2vFL0YjW8Raiv5g4ss_JIj8aJybfKkwx8k-DGIon7HiEKydrcMMFlHBuuX_f3ToCasObIZRV80JnfAc0hEFsiWSN-ugQ3Y3CPO9vuYwD-h3NnMo-CG0TsehBWOaL1MdSj1HAyXLjEdnWJxGNcWHGlkhGLlI3yj7qs4u96XcOuvBp2K3sQCGw3Qyox84WteJ2wI03GH7-KYBEuVPzhAUZP6B3oqTNhI5as6_QOX-T8t-dttkWOi3dwnGepj2g8E1adS5IAhbSL2lXRUpVDWT-Zt4fjWB5-0Ao1EM5ogqNztQTvXH71gtZaajnn4I_kvg9x8nLz9VTyP9P02wuSlsXZ67YK3fjdet56l54wOmg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer Vf0fGYBmyJvzO2kCY3JSIbAnKAPP1g6LgQEFl4AYXsLSgNXk5ca4dbkN94JH8rVaO75kYJHWB_A6jM0EcJad_doLOXcDYhb2KmdCp2i-FF3zoEj0fTCRf-icQVsvAWkJJ5MxpySRqtSknVdFFzp-4d4YpVQ_mocZU1jIoVl1TI5yhkmY02RX9VcvN6l22IjHHDT8rH7jHvIsUYby9W3Meg8HXuys-WuHM8-0Ur_AT29vP0kB6WD_r7vQahpsquw349-ReqAEHJ0nqh2gd87aXzFehqI2hGe4Z2stC83nIBMpBCUShy0CNyiYBNl2MGr3V8pGvMR0IALFt_QUpp2-LUE2YYS62JAvrPBo-44MVc8pPRY0RxHys3dE4KKxmO9Q5ayZTok3MiXhgtGrW3kn5QdXjnB9WM-XYyLw6WqEYRBWv5D-2x1b-ZsiB1GmzBKaN1qBa5K478EbJCZjEFbXIz9j3KUduyWZ_c7Bc8-sAVbCgT3U1wWXveNKpoPGS2hPGJOd6mP_rZ1Q0TGdvgqdB8lQUNZQEfaH8DiQ75e4lkYbLlMJvOfq23huVpNyxmQnvSo8-x-fX29lLqWizpnm8e3h-IN2J-ZB9XbsfXUiIQQRQXTHaC9U4D4OPrpw-6ssZUqkBSCr6S-OV4vurd7TG-R4IzrbMuTBITSyT_Ojq0Nyns9-KE5PM01XdhT1D3vPE8rL-5sBYw9x45YTabb3rxDxK4Fo_VRfmh9p3B8oaV_0LQJBw-2cqSHq0qceh2rlXX_MBDn-AZmuyMIwcG2h7da_fjgWOzekW45a4_UcbASh0qcpfE485UP5Uo6MeiDOYn4xwMbQEoDo3VAhu3xfI_3SeQS5w2oOl5IsGUQ1C7Ff_rJbM5xW9dCx8Rd1yaQjAJyf3dmsnde3PVWY7l874XwLv_UwxrPyEVerB7rkm1SRGjCI9NuRnSywZkZm7MAlRT0nV1cnGkfhhye522je-E_iTsnUIlvsCutAXn01K-VO-r9FycA0PYCQzLgMwQRk2m6MyuvcTKDp2FT-s7U8j_kd1o2UUvMz4Di_YFFr8elGxa5Helhi9plXiJRleT2GNBshVfSzjsvEzjsSURI48n9EdIcJJt1e4OyMppjd57wfL-XFxP31l19syckFTKV-2XHy9zqDKsrWZW3iiy53FX3Vk8rTrEUWZdqDsC36zUw0tBqx7MBUrO--31hNxiHBin__KFyyxa8SDJE6EMSt2dtfMpA3bPaFkA4ZT99Eonc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/assessment/getassessment?AssessmentId=1",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"assessment",
+						"getassessment"
+					],
+					"query": [
+						{
+							"key": "AssessmentId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/assessment/postassessment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "rvJWkhrYOxF-dmmT56sA3CPFn1AViWCF2eG72oTIeofMMwALAnQW3PoumH4DbHZBWYVQXEhqLrMu9Vc7NdnvmePIOpNUtDlO8zL2Y7g9lGiofp1RQP0YYkkLlrSG4PyaJgs7zhQlzrK8ijWBwGwDlgwbzVdWGhk9pm-4I2xwv7xdIBKBcck0Uii_-Jk9ZPG_CgNmPYKL5KnuJ8HRm3MtEWoyaOQM64p7t6oOwaRMPmKrrFmvvjh4PjCJJLS4xkPqxMwpZnXuKnNwBaHrG9C1XxVc7gR9JLC6PQvWomddL4h9UmEkK3ketpaWGmX7bIrAyuUo41sPdYWGZFEi7HtxSt6GJO5RhQ6JOWzKEvg3NVpLZwe7-XDY2D0dta5jpg4evnR01j0SggXIk7kr6lSMXsni40IZGFFrVuWwob2rToIlQbQ0zcWtOSDC-JVZtmOQS9dt21_Bs4MtBxx421gj6l6Afwk6Yo8Gcrj9k1kVAs9jlCSJvHC7t6wpI-6S_zeczy_Gk4fCawizygOByjpscY4nwsyUHcY27PQPinETrAFU_mA65jgpRlRTBDY8D5iWXEp99-HpcaPXLc_8S3ro4WD_FaYBHtQVB5ipEp5SHvQb9AzSRG9JKe2JAUS9E6N0iqhmJMyg8-t_1e7xOfLMCh-bKEMFKGWZPpFEawGPzMhtrOcmSytFD1SUC_yASbcJCO4H7g9vX9sx4JlxlBpZf48GFoWNeG48eZlxot_i6jcop6xUtbHMwBD6Ylmpjp8sTOflIdyTbmwihPPTEQn4-ypHoveVCxntreVOf6gjyenWf8qfsbE5Vzgf6xFWKgbp04guRIRZqm3VlQ2xXhHJc5JL0EURrHuacqeV1Ak-sHSEjEXRbC9q558zyeEffWARtTeWa34cgpoKhqobu20EfpVZPjzUVDXldl-Oav1_0r85PWADotehWzehAM74xxu4BEHVTVNtGdlnplF8RQ4Do_BwMLag-ZVMbLAwy3IytQu68_75gU_XMSubQCIAzsXS8W2IOud4hwRPt5w9pA4bH2lqjw8H49wyUs8QOFIRaI3XTfUMCyWJvmz8DSOs-Grocz4fZNIrv8lH_w88ZSdoBhJkzs78sGeeFKha-NPAswSlWiMX33EO5JSOW2tzCys2VX3m5gKygg_S_1nUpmt_rd4ZIerg7qmY_QHAXjt5jK0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[ {\n    \"comment\": \"string\",\n    \"selectOption\": 1,\n    \"questionId\": 8\n  }\n]\n\t\n"
+				},
+				"url": {
+					"raw": "http://esstest-net.t4edu.com/SafetyDayTest/api/assessment/postassessment",
+					"protocol": "http",
+					"host": [
+						"esstest-net",
+						"t4edu",
+						"com"
+					],
+					"path": [
+						"SafetyDayTest",
+						"api",
+						"assessment",
+						"postassessment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

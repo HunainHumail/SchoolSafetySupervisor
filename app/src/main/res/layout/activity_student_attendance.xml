@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/appbackground"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="76dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:fontFamily="@font/cairoregular"
+            android:text="الكل"
+            android:textColor="@color/appblue"
+            android:textSize="20dp"
+            android:theme="@style/MyCheckbox" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"></ListView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/attendencebtn"
+
+            />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:gravity="center"
+            android:text="No results found." />
+
+        <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="137dp"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:background="@drawable/attendencebtn"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkBox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="342dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:button="@null"-->
+        <!--android:textColor="@color/appblue"-->
+        <!--android:theme="@style/MyCheckbox"-->
+        <!--android:drawableRight="?android:attr/listChoiceIndicatorMultiple"-->
+        <!--android:text="الكل"-->
+        <!--android:outlineAmbientShadowColor="@color/appblue"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/recyclerView"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/searchView"-->
+        <!--app:layout_constraintVertical_bias="1.0" />-->
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

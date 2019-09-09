@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.NoActionBar" >
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.NoActionBar" >
+    </style>
+
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#b9babe</item>
+        <item name="android:colorControlActivated">#0091ea</item>
+        <item name="android:colorControlHighlight">#c51162</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+
+</resources>
